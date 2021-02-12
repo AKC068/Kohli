@@ -29,6 +29,16 @@
     vertical-align: auto;
 }
 
+.navbar .nav-item {
+    padding: 0 10px;
+}
+
+.navbar .nav-item a:hover {
+    color: #fff;
+    border-bottom: 1px #fff solid;
+    transition: 0.4s;
+}
+
 .carousel-inner img{
     width: 100%;
     height: 100%;
@@ -221,3 +231,94 @@
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+
+/* ABOUT */
+
+#main {
+    padding-top: 66px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 576px){
+    #main {
+        padding-top: 0;
+    }
+}
+
+#main .mainside{
+    border-right: 1px #555 solid;
+    padding: 15px;
+}
+
+#main .sidebar {
+    /* background-color: rgba(0, 0, 0, 0); */
+    padding: 15px;
+    /* border-bottom: 1px #555 solid; */
+}
+
+#main .sidebar h5 {
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+#main .sidebar h5::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+}
+
+#main .sidebar h5::after {
+    background: #fff;
+    width: 1.0rem;
+}
+
+
+#main .sidebar p{
+    color: rgb(200, 200, 200);
+    font-size: 14px;
+    border-bottom: 1px solid #333;
+    padding: 0 0 1rem 0;
+}
+
+#main .sidebar p a{
+    color: rgb(200, 200, 200);
+}
+
+#main .sidebar p a:hover{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+#main .sidebar ul {
+    color: rgb(200, 200, 200);
+    font-size: 14px;
+    list-style: none;
+    padding-inline-start: 0;
+    margin-bottom: 0.4rem;
+}
+
+#main .sidebar ul li{
+    border-bottom: 1px solid #333;
+    padding: 0.5rem 0;
+    list-style: none;
+}
+
+#main .sidebar ul li a{
+    color: rgb(200, 200, 200);
+}
+
+#main .sidebar ul li a:hover{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+#main .sidebar ul li i {
+    padding-right: 8px;
+    color:  rgb(190, 190, 190);
+    }
