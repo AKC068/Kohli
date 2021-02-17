@@ -414,15 +414,15 @@ body {
 
 /* ======= about ======= */
 
-#about {
+.about {
     padding: 70px 0;
 }
 
-#about .title {
+.about .title {
     text-transform: uppercase;
 }
 
-#about .title h5 {
+.about .title h5 {
     margin-top: 0.5rem;
     font-size: 1em;
     color: #000;
@@ -430,7 +430,7 @@ body {
     padding-bottom: 0.5rem;
 }
 
-#about .title h5::after, #about .title h5::before {
+.about .title h5::after, .about .title h5::before {
     content: '';
     position: absolute;
     left: 0;
@@ -438,18 +438,157 @@ body {
     height: 2px;
 }
 
-#about .title h5::before {
+.about .title h5::before {
     right: 0;
     background: rgb(190, 190, 190);
     width: 200px;
 }
 
-#about .title h5::after {
+.about .title h5::after {
     background: #000;
     width: 50px;
 }
 
-#about .title p{
+.about .title p{
     font-size: 2.5em;
     font-weight:700;
 }
+
+/* ======= features ======= */
+
+#features {
+    overflow: hidden;
+    background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(img_kohli/img-2.jpg) fixed center center;
+    background-size: cover;
+    padding: 80px 0;
+}
+#features .cta-title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  #features .cta-text {
+    color: #fff;
+  }
+  
+  @media (min-width: 769px) {
+    #features .cta-btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+  
+  #features .cta-btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 25px;
+    transition: background 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  #features .cta-btn:hover {
+    background: #1dc8cd;
+    border: 2px solid #1dc8cd;
+  }
+  
+
+/* ======= servies ======= */
+
+#services {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#services .title {
+    text-transform: uppercase;
+}
+
+#services .title h5 {
+    margin-top: 0.5rem;
+    font-size: 1em;
+    color: #000;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+#services .title h5::after, #services .title h5::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+}
+
+#services .title h5::before {
+    right: 0;
+    background: rgb(190, 190, 190);
+    width: 200px;
+}
+
+#services .title h5::after {
+    background: #000;
+    width: 50px;
+}
+
+#services .title p{
+    font-size: 2.5em;
+    font-weight:700;
+}
+
+#services .card{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#services .flip-card {
+    background-color: transparent;
+    /* width: 300px; */
+    height: 40vh;
+    perspective: 1000px;
+  }
+  
+  #services .flip-card-inner {
+    position: relative;
+    /* width: 100%; */
+    /* height: 100%; */
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  }
+  
+  #services .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  #services .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  #services .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  #services .flip-card-back {
+    background-color: #000;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  #services .flip-card-front img{
+      height: 75px;
+      width: 90px;
+  }
