@@ -14,6 +14,8 @@ body {
 .navbar{
     position: fixed;
     background-color: rgba(0,0,0,0.9);
+    /* height: 126px; */
+    /* vertical-align: top; */
 } 
 
 .navbar .navbar-dark .navbar-toggler{
@@ -72,6 +74,18 @@ body {
         height: 90vh;
     }
 }
+
+.whole-screen2 {
+    background-color: #000;
+    height: 126px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.whole-screen2 .navbar, .whole-screen2 .fixed-top {position: relative;}
 
 /* @media only screen and (max-width: 576px) {
     .carousel-control-prev, .carousel-control-next {
@@ -500,7 +514,7 @@ body {
   }
   
 
-/* ======= servies ======= */
+/* ======= services ======= */
 
 #services {
     padding-top: 70px;
@@ -608,3 +622,46 @@ body {
       vertical-align: middle;
       object-fit: cover;
   }
+
+/* <==== blog ====> */
+
+#blog {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#blog .title {
+    text-transform: uppercase;
+}
+
+#blog .title h5 {
+    margin-top: 0.5rem;
+    font-size: 1em;
+    color: #000;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+#blog .title h5::after, #blog .title h5::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+}
+
+#blog .title h5::before {
+    right: 0;
+    background: rgb(190, 190, 190);
+    width: 200px;
+}
+
+#blog .title h5::after {
+    background: #000;
+    width: 50px;
+}
+
+#blog .title p{
+    font-size: 2.5em;
+    font-weight:700;
+}  
