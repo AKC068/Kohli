@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(255, 255, 255);} 
+    background-color: rgb(255, 255, 255);
+}
     /* background-image: url("img_kohli/bg-main.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -39,16 +40,19 @@ body {
     padding-bottom: 6px;
 } */
 
-.navbar .navbar-nav a:hover, .navbar .navbar-nav .active > a, .navbar .navbar-nav li:hover > a{
+.navbar .navbar-nav a:hover > li, .navbar .navbar-nav .active > a /*, .navbar .navbar-nav li:hover > a */{
     color: #fff;
 }
 
 @media only screen and (min-width: 768px){
-.navbar .navbar-nav a:hover, .navbar .navbar-nav .active > a, .navbar .navbar-nav li:hover > a {
-    color: #fff;
+.navbar .navbar-nav a:hover, .navbar .navbar-nav .active > a /*, .navbar .navbar-nav li:hover > a*/{
     border-bottom: 2px #fff solid;
-    /* transition: ease all 0.3s; */
+    transition: 0.5s;
     padding-bottom: 6px;
+    display: inline-block;
+}
+.navbar .navbar-nav a {
+    transition: 0.5s;
 }
 }
 
@@ -472,7 +476,7 @@ body {
 
 #features {
     overflow: hidden;
-    background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(img_kohli/img-2.jpg) fixed center center;
+    background: url(img_kohli/abstract-dark-background-with-flowing-colouful-waves.jpg) fixed;
     background-size: cover;
     padding: 80px 0;
 }
@@ -495,7 +499,6 @@ body {
   }
   
   #features .cta-btn {
-    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
@@ -506,11 +509,13 @@ body {
     margin: 10px;
     border: 2px solid #fff;
     color: #fff;
+    text-decoration: none;
   }
   
   #features .cta-btn:hover {
-    background: #1dc8cd;
-    border: 2px solid #1dc8cd;
+    background: #fff;
+    border: 2px solid #fff;
+    color: #000;
   }
   
 
@@ -576,7 +581,7 @@ body {
     transition: transform 0.6s;
     transform-style: preserve-3d;
     border-radius: 1.9rem;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.2);
   }
   
   #services .flip:hover .flip-inner {
@@ -593,10 +598,10 @@ body {
   }
   
   #services .flip-front {
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(255, 255, 255);
     color: black;
   }
-  
+
   #services .flip-back {
     /* background-color: #000;
     color: white; */
@@ -617,8 +622,8 @@ body {
   }
 
   #services .flip-front img{
-      height: 75px;
-      width: 90px;
+      height: 100%;
+      width: 100%;
       vertical-align: middle;
       object-fit: cover;
   }
