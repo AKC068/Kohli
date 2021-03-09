@@ -47,12 +47,12 @@ body {
 @media only screen and (min-width: 768px){
 .navbar .navbar-nav a:hover, .navbar .navbar-nav .active > a /*, .navbar .navbar-nav li:hover > a*/{
     border-bottom: 2px #fff solid;
-    transition: 0.5s;
+    transition: all 0.5s ease;
     padding-bottom: 6px;
     display: inline-block;
 }
 .navbar .navbar-nav a {
-    transition: 0.5s;
+    transition: all 0.5s ease;
 }
 }
 
@@ -670,3 +670,177 @@ body {
     font-size: 2.5em;
     font-weight:700;
 }  
+
+
+/* <======= contact =======> */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-top: 200px;
+    padding-bottom: 70px;
+}
+
+#contact .title {
+    text-transform: uppercase;
+}
+
+#contact .title h5 {
+    margin-top: 0.5rem;
+    font-size: 1em;
+    color: #000;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+#contact .title h5::after, #contact .title h5::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+}
+
+#contact .title h5::before {
+    right: 0;
+    background: rgb(190, 190, 190);
+    width: 200px;
+}
+
+#contact .title h5::after {
+    background: #000;
+    width: 50px;
+}
+
+#contact .title p{
+    font-size: 2.5em;
+    font-weight:700;
+}  
+
+#contact .forthis {
+    box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.2);
+    padding: 30px 20px;
+}
+
+@media only screen and (min-width: 768px){
+    #contact .forthis{
+        max-width: 800px;
+    }
+}
+
+#contact .form-row .form-group {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    margin-top: 0.8rem;
+}
+
+#contact .form-row .form-group input, 
+#contact .form-row .form-group textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 1.0em;
+    border-bottom: 2px solid silver;
+    border-radius: 0px;
+}
+
+#contact .form-row .form-group textarea {
+    height: 100px;
+}
+#contact .size {
+    height: 100px;
+}
+
+#contact .form-group input:focus ~ label,
+#contact .form-group input:valid ~ label,
+#contact .form-group textarea:focus ~ label,
+#contact .form-group textarea:valid ~ label{
+    transform: translateY(-25px);
+    font-size: 10px;
+    color: black; 
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+#contact .form-row .form-group label{
+    position: absolute;
+    bottom: 10px;
+    left:0;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    margin-bottom: 0px;
+    padding-left: 15px;
+    font-size: 1.0em;
+}
+
+#contact .form-row>.column{
+    padding: 0 10px;
+}
+#contact .form-group .form-control{
+    padding: .375rem .375rem;
+}
+#contact .form-group .form-control:focus {
+    box-shadow: none;
+}
+
+#contact .form-row .form-group .gap {top: 98.5px}
+
+#contact .form-row .form-group .underline {
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 96%;
+}
+
+@media only screen and (min-width: 768px){
+    #contact .form-row .form-group .extra {
+        width: 97.5%; 
+    }
+}
+
+#contact .form-group .underline::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: black;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+}
+
+#contact .form-group input:focus ~ .underline::before,
+#contact .form-group input:valid ~ .underline::before,
+#contact .form-group textarea:focus ~ .underline::before,
+#contact .form-group textarea:valid ~ .underline::before  {
+    transform: scaleX(1);
+    border-bottom: none;
+}
+
+#contact .btn-sm {
+    padding-top: 2.5rem;
+}
+
+#contact .sm-button {
+    padding: 0.25rem 1rem;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid #000;
+    font-weight: 600;
+    z-index: 100;
+    transition: all 0.4s ease;
+}
+#contact .sm-button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    font-weight: 500;
+}
