@@ -12,12 +12,18 @@ body {
     width: 100vw;
     position: relative; */
 
-.navbar{
+/* .navbar{
     position: fixed;
     background-color: rgba(0,0,0,0.9);
-    /* height: 126px; */
-    /* vertical-align: top; */
-} 
+}  */
+.navbar {
+    /* position: fixed; */
+    background-color: rgba(0,0,0,0.9) !important;
+}
+.navbar.scrolled {
+    background-color: #ff0000 !important;
+    transition: background-color 200ms;
+}
 
 .navbar .navbar-dark .navbar-toggler{
     border: none;
