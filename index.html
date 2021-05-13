@@ -9,15 +9,16 @@
     <link rel="stylesheet" href="kohli_style.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Poppins:600%2C700%2C400%2C500" rel="stylesheet" property="stylesheet" type="text/css">
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      
-        <a class="navbar-brand" href="#"><img src="img_kohli/K_Logo.png" class="logo"> Kohli</a>
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container reduce">
+        <a class="navbar-brand" href="#"><img src="img_kohli/K_Logo_Black-1.png" class="logo"></a>
     
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#fff"></i></span>
+          <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#000"></i></span>
         </button>
       
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -33,6 +34,7 @@
             </li>
           </ul>
         </div>
+      </div>
     </nav>
     <div class="whole-screen1">
       <div class="sliding">
@@ -86,7 +88,7 @@
           <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
         </g>
         <g class="wave3">
-          <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+          <use xlink:href="#wave-path" x="50" y="9" fill="#000">
         </g>
       </svg>
     </div>
@@ -141,7 +143,7 @@
               <div class="flip-inner">
                 <div class="flip-front">
                   <div class="container">
-                    <img src="img_kohli/Cloud hosting-pana (1).png">
+                    <img src="img_kohli/Cloud hosting-pana.png">
                   </div>
                 </div>
                 <div class="flip-back">
@@ -163,7 +165,7 @@
               <div class="flip-inner">
                 <div class="flip-front">
                   <div class="container">
-                    <img src="img_kohli/Domain names-pana.png">
+                    <img src="img_kohli/Domain names-pana (1).png">
                   </div>
                 </div>
                 <div class="flip-back">
@@ -185,7 +187,7 @@
               <div class="flip-inner">
                 <div class="flip-front">
                   <div class="container">
-                    <img src="img_kohli/Web devices-amico.png">
+                    <img src="img_kohli/Web devices-pana (1).png">
                   </div>
                 </div>
                 <div class="flip-back">
@@ -207,7 +209,7 @@
               <div class="flip-inner">
                 <div class="flip-front">
                   <div class="container">
-                    <img src="img_kohli/Online world-cuate.png">
+                    <img src="img_kohli/Online world-cuate (1).png">
                   </div>
                 </div>
                 <div class="flip-back">
@@ -229,7 +231,7 @@
               <div class="flip-inner">
                 <div class="flip-front">
                   <div class="container">
-                    <img src="img_kohli/Designer life-cuate.png">
+                    <img src="img_kohli/Designer life-cuate (1).png">
                   </div>
                 </div>
                 <div class="flip-back">
@@ -251,7 +253,7 @@
               <div class="flip-inner">
                 <div class="flip-front">
                   <div class="container">
-                    <img src="img_kohli/Social tree-pana.png">
+                    <img src="img_kohli/Social tree-pana (1).png">
                   </div>
                 </div>
                 <div class="flip-back">
@@ -283,7 +285,7 @@
             <p class="cta-text">Subcribe to our newsletter to get the most recent news and updates.</p>
             <div class="footer-newsletter">
               <input type="email" name="email" placeholder="Email">
-              <button class="btn" type="submit">Subscribe</button>
+              <button class="bttn" type="submit">Subscribe</button>
             </div>
           </div>
         </div>
@@ -492,7 +494,7 @@
           <div class="row">
     
               <div class="col-sm-4 footer-info">
-                <h3><img src="img_kohli/K_Logo.png" alt="" title="" height="55px" width="55px"></h3>
+                <h3><img src="img_kohli/K_Logo_Black-1.png" alt="" title="" height="55px" width="55px"></h3>
                 <p>Kohli Company founded in 2006 is a group of businesses, that develop innovative Web-Products serving people worldwide, is now Kohli Media LLP - an Indian Limited Liability Partnership.</p>
               </div>
     
@@ -533,6 +535,20 @@
         </div>
       </div>
     </footer>
+
+<script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-66px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+</script>
 
 <!-- JS, Popper.js, and jQuery -->
         
