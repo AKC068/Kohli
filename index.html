@@ -18,10 +18,17 @@
         <a class="navbar-brand" href="#"><img src="img_kohli/K_Logo_Black-1.png" class="logo"></a>
     
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#000"></i></span>
+          <span class="" role="button" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true" style="color:#000"></i></span>
         </button>
-      
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home</a>
@@ -548,6 +555,13 @@
   prevScrollpos = currentScrollPos;
 }
 
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
 </script>
 
 <!-- JS, Popper.js, and jQuery -->
